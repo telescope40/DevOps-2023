@@ -1,0 +1,5 @@
+# Ansible inventory created from ['/workspaces/DevOps-2023/netlab/topology.yml', 'package:topology-defaults.yml']
+#
+
+netlab_module:
+- bgp
