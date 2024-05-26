@@ -17,4 +17,13 @@ COPY Makefile /tmp/
 RUN su $USER -c "/usr/bin/python3 -m venv /home/${USER}/venv" \
    && su $USER -c "${VENV_PATH}/bin/pip --disable-pip-version-check --no-cache-dir install -r /tmp/requirements.txt" \
    && rm -rf /tmp/requirements.txt
-RUN su $USER -c "/usr/bin/python3 -m pip install networklab"  \ su $USER -c "netlab install -y ubuntu ansible libvirt containerlab"
+RUN
+## Add Resources
+#echo "deb [trusted=yes] https://apt.fury.io/netdevops/ /" | \
+#sudo tee -a /etc/apt/sources.list.d/netdevops.list
+#
+#sudo apt update && sudo apt install containerlab
+#
+#sudo apt-get install containerd
+# cd netlab/
+# netlab up - brings up the lab
