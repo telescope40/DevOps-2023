@@ -1,0 +1,351 @@
+{
+  "name": "netlab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "netlab_mgmt",
+        "bridge": "br-56c0897f7d3e",
+        "ipv4-subnet": "192.168.121.0/24",
+        "ipv4-gw": "192.168.121.1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "isp1": {
+      "index": "0",
+      "shortname": "isp1",
+      "longname": "clab-netlab-isp1",
+      "fqdn": "isp1.netlab.io",
+      "group": "as64512",
+      "labdir": "/workspaces/DevOps-2023/netlab/clab-netlab/isp1",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:9.1.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "192.168.121.103",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-56c0897f7d3e",
+        "clab-node-group": "as64512",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/DevOps-2023/netlab/clab-netlab/isp1",
+        "clab-node-name": "isp1",
+        "clab-node-type": "",
+        "clab-topo-file": "/workspaces/DevOps-2023/netlab/clab.yml",
+        "containerlab": "netlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "isp2": {
+      "index": "1",
+      "shortname": "isp2",
+      "longname": "clab-netlab-isp2",
+      "fqdn": "isp2.netlab.io",
+      "group": "as64513",
+      "labdir": "/workspaces/DevOps-2023/netlab/clab-netlab/isp2",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:9.1.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "192.168.121.104",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-56c0897f7d3e",
+        "clab-node-group": "as64513",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/DevOps-2023/netlab/clab-netlab/isp2",
+        "clab-node-name": "isp2",
+        "clab-node-type": "",
+        "clab-topo-file": "/workspaces/DevOps-2023/netlab/clab.yml",
+        "containerlab": "netlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "nyc_edge_01": {
+      "index": "2",
+      "shortname": "nyc_edge_01",
+      "longname": "clab-netlab-nyc_edge_01",
+      "fqdn": "nyc_edge_01.netlab.io",
+      "group": "as65001",
+      "labdir": "/workspaces/DevOps-2023/netlab/clab-netlab/nyc_edge_01",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:9.1.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "192.168.121.101",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-56c0897f7d3e",
+        "clab-node-group": "as65001",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/DevOps-2023/netlab/clab-netlab/nyc_edge_01",
+        "clab-node-name": "nyc_edge_01",
+        "clab-node-type": "",
+        "clab-topo-file": "/workspaces/DevOps-2023/netlab/clab.yml",
+        "containerlab": "netlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "nyc_edge_02": {
+      "index": "3",
+      "shortname": "nyc_edge_02",
+      "longname": "clab-netlab-nyc_edge_02",
+      "fqdn": "nyc_edge_02.netlab.io",
+      "group": "as65001",
+      "labdir": "/workspaces/DevOps-2023/netlab/clab-netlab/nyc_edge_02",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:9.1.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "192.168.121.102",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-56c0897f7d3e",
+        "clab-node-group": "as65001",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/DevOps-2023/netlab/clab-netlab/nyc_edge_02",
+        "clab-node-name": "nyc_edge_02",
+        "clab-node-type": "",
+        "clab-topo-file": "/workspaces/DevOps-2023/netlab/clab.yml",
+        "containerlab": "netlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "remote_host1": {
+      "index": "4",
+      "shortname": "remote_host1",
+      "longname": "clab-netlab-remote_host1",
+      "fqdn": "remote_host1.netlab.io",
+      "group": "",
+      "labdir": "/workspaces/DevOps-2023/netlab/clab-netlab/remote_host1",
+      "kind": "linux",
+      "image": "python:3.9-alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "192.168.121.107",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-56c0897f7d3e",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/DevOps-2023/netlab/clab-netlab/remote_host1",
+        "clab-node-name": "remote_host1",
+        "clab-node-type": "",
+        "clab-topo-file": "/workspaces/DevOps-2023/netlab/clab.yml",
+        "containerlab": "netlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "remote_host2": {
+      "index": "5",
+      "shortname": "remote_host2",
+      "longname": "clab-netlab-remote_host2",
+      "fqdn": "remote_host2.netlab.io",
+      "group": "",
+      "labdir": "/workspaces/DevOps-2023/netlab/clab-netlab/remote_host2",
+      "kind": "linux",
+      "image": "python:3.9-alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "192.168.121.108",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-56c0897f7d3e",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/DevOps-2023/netlab/clab-netlab/remote_host2",
+        "clab-node-name": "remote_host2",
+        "clab-node-type": "",
+        "clab-topo-file": "/workspaces/DevOps-2023/netlab/clab.yml",
+        "containerlab": "netlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "server1": {
+      "index": "6",
+      "shortname": "server1",
+      "longname": "clab-netlab-server1",
+      "fqdn": "server1.netlab.io",
+      "group": "",
+      "labdir": "/workspaces/DevOps-2023/netlab/clab-netlab/server1",
+      "kind": "linux",
+      "image": "python:3.9-alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "192.168.121.105",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-56c0897f7d3e",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/DevOps-2023/netlab/clab-netlab/server1",
+        "clab-node-name": "server1",
+        "clab-node-type": "",
+        "clab-topo-file": "/workspaces/DevOps-2023/netlab/clab.yml",
+        "containerlab": "netlab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "server2": {
+      "index": "7",
+      "shortname": "server2",
+      "longname": "clab-netlab-server2",
+      "fqdn": "server2.netlab.io",
+      "group": "",
+      "labdir": "/workspaces/DevOps-2023/netlab/clab-netlab/server2",
+      "kind": "linux",
+      "image": "python:3.9-alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "192.168.121.106",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-56c0897f7d3e",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/DevOps-2023/netlab/clab-netlab/server2",
+        "clab-node-name": "server2",
+        "clab-node-type": "",
+        "clab-topo-file": "/workspaces/DevOps-2023/netlab/clab.yml",
+        "containerlab": "netlab"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "nyc_edge_01",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:24:2f:ec",
+        "peer": "z"
+      },
+      "z": {
+        "node": "nyc_edge_02",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:a6:15:3b",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "nyc_edge_01",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:2d:55:96",
+        "peer": "z"
+      },
+      "z": {
+        "node": "isp1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:25:61:8d",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "nyc_edge_02",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:ba:37:fd",
+        "peer": "z"
+      },
+      "z": {
+        "node": "isp2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:b0:dd:92",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "nyc_edge_01",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:f1:d8:9b",
+        "peer": "z"
+      },
+      "z": {
+        "node": "server1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:14:f4:15",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "nyc_edge_02",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:69:6f:db",
+        "peer": "z"
+      },
+      "z": {
+        "node": "server2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:ec:dd:0d",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "isp1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:6f:e7:6f",
+        "peer": "z"
+      },
+      "z": {
+        "node": "remote_host1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:0b:ec:dd",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "isp2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:b9:e3:e1",
+        "peer": "z"
+      },
+      "z": {
+        "node": "remote_host2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:a2:2e:3b",
+        "peer": "a"
+      }
+    }
+  ]
+}
